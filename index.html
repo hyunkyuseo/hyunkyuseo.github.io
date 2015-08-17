@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--
+
+LIGHTS OUT, GUERILLA RADIO!
+Code by Hyun and humans.
+
+Need to add alt tags :(
+
+!-->
+<html>
+	<head>
+		<script>
+			if(document.images){
+		        new Image().src="./img/ui/loader.gif";
+		    }
+		</script>
+		<style>
+			body .loading-screen {
+				transition:200ms all ease;
+				display:block;
+				z-index:8;
+				height:100%;
+				width:100%;
+				left:0;
+				top:0;
+				background-color: rgba(255,255,255,0.6);
+				visibility:hidden;
+				opacity:0;
+				position:fixed;
+			}
+			.loading-screen.active {
+				visibility:visible;
+				opacity:1;	
+			}
+			body .loading-screen img {
+				display:block;
+				height:64px;
+				width:64px;
+				top:50%;
+				left:50%;
+				margin:-32px 0 0 -32px;
+				position:absolute;
+			}
+		</style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-data-title" content="Hyun">
+		<meta name="format-detection" content="telephone=no">
+    	<meta name="keywords" content="designer, graphic design, developer, interactive designer, interactive, design, programmer, programming, illustrator">
+	  	<meta name="description" content="Personal portfolio site of Hyun Kyu Seo. Hyun is a designer, developer and technologist.">
+    	<meta property="og:data-title" content="Hyun">
+    	<meta property="og:title" content="Hyun">
+	    <meta property="og:type" content="website">
+	    <meta property="og:url" content="https://hyunkyu.com">
+	    <meta property="og:image" content="https://hyunkyu.com/img/ui/homeheader.png">
+	    <meta property="og:site_name" content="Hyun">
+	    <meta property="og:description" content="Personal portfolio site of Hyun Kyu Seo. Hyun is a designer, developer and technologist.">
+	    <meta itemprop="name" content="Hyun">
+	    <meta itemprop="description" content="Personal portfolio site of Hyun Kyu Seo. Hyun is a designer, developer and technologist.">
+	    <meta itemprop="image" content="https://hyunkyu.com/img/ui/homeheader.png">
+		<title>Hyun</title>
+	    <link rel="apple-touch-icon" sizes="57x57" href="./img/ui/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./img/ui/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/ui/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/ui/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/ui/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/ui/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/ui/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./img/ui/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/ui/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="./img/ui/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/ui/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="./img/ui/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./img/ui/favicon-16x16.png">
+		<link rel="manifest" href="./img/ui/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="./img/ui/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link href="./img/ios/apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+		<link href="./img/ios/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+		         and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="./img/ios/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+		         and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="./img/ios/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+		         and (orientation: portrait)
+		         and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+		<link href="./img/ios/apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+		         and (orientation: landscape)
+		         and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+		<link href="./img/ios/apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+		         and (orientation: portrait)
+		         and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link href="./img/ios/apple-touch-startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+		         and (orientation: landscape)
+		         and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+		<link rel="stylesheet" href="./css/main.css" type="text/css">
+		<link rel="stylesheet" href="./css/fonts.css" type="text/css">
+		<script src="./js/jquery.js" ></script>
+        
+	</head>
+	<body>
+		<h1>Hyun</h1>
+		<aside class="universal-elements">
+			<div class="loading-screen active">
+				<img src="./img/ui/loader.gif" alt="Loading Indicator" />
+			</div>
+			<a data-title="Back to the home page." class="back-button"><img draggable="false" src="./img/ui/back.svg" alt="Back Button Image"><span>Back</span></a>
+			<button class="back-to-top"><img draggable="false" src="./img/ui/top.svg" alt="Back to top of the page." /> <span>TOP</span></button>
+			<img src="./img/ui/loader.gif" class="element-loader" alt="Stuff is loading right now..." />
+			<section class="dialog-box" data-title="Popup Dialog Box">
+				<h1>My bad!</h1>
+				<p>I probably screwed up on putting the correct URL on the link...</p>
+				<button class="exit-dialog-box button button-1 b-fr b-single" data-title="Exit Dialog Box">Okay</button>
+			</section>
+			<div class="zoom-img-overlay">
+				<img src="#" class="zoom-img-big" />
+			</div>
+		</aside>
+		<main class="projects-list-view">
+			<article data-title="Hyun's introduction.">
+				<p>
+					<strong>My name is Hyun — </strong>I am a designer, developer, and technologist currently working in IBM Design and IBM Security in Austin, Texas. Most of my recent work has involved trying to solve problems revolving around cyber-security.
+					<br />
+					<span class="tab-space"></span>Along with my job at IBM, I also privately tutor on the subjects of front-end development and design, as well as donate my free time to fighting for digital privacy. If you have any questions or have something in mind for discussion, please don't hesitate to contact me.
+				</p>
+				<ul>
+					<li><a href="./dl/resume.pdf" rel="author" target="_blank">Résumé</a></li>
+					<li><a href="mailto:hseo@openmailbox.org" target="_blank" rel="author">Email</a></li>
+					<li><a href="./dl/public.asc" target="_blank">PGP Public Key</a></li>
+					<li><a href="https://www.linkedin.com/in/hyunseo" target="_blank" rel="author">LinkedIn</a></li>
+				</ul>
+			</article>
+			<section data-title="Hyun's work in the commercial space.">
+				<h1>Commercial</h1>
+				<ul>
+					<li><a href="#/projects/employment/">Current Employment Context</a></li>
+					<li><a href="#/projects/ip/" >Publications and Patents</a></li>
+					<li><a href="#/projects/xforce/" >IBM X-Force Exchange</a></li>
+					<li><a href="#/projects/mobileanalyzer/" >IBM Security AppScan Mobile Analyzer</a></li>
+					<li><a href="#/projects/appscanenterprise/" data-href="/projects/appscanenterprise/" >IBM Security AppScan Enterprise</a></li>
+					<li class="nda"><a href="#" class="nda-project" >IBM Security Product X</a></li>
+					<li class="nda"><a href="#" class="nda-project" >IBM Security Project Y</a></li>
+					<li><a href="#/projects/tcbventures/" >Transcure Bio Ventures</a></li>
+					<li><a href="#/projects/wpac/" >Wolf Performing Arts Center</a></li>
+					<li><a href="#/projects/rutgersnewarkhousing/" >Rutgers University Housing</a></li>
+				</ul>
+			</section>
+			<section data-title="Hyun's contribution to communities.">
+				<h1>Community</h1>
+				<ul>
+					<li><a href="#/projects/r2rmerge/">Controversial Rutgers Merger</a></li>
+					<li><a href="#/projects/aigapda/" >AIGA Philadelphia Design Awards 2012</a></li>
+					<li><a href="#/projects/aigaspace/" >AIGA Philadelphia Space</a></li>
+					<li><a href="#/projects/atlas/" >ATLAS</a></li>
+					<li><a href="#/projects/columnify/" >Columnify</a></li>
+					<li><a href="#/projects/phillyphotoapp/" >Philly Photo Day App</a></li>
+				</ul>
+			</section>
+			<section data-title="Things Hyun did for fun.">
+				<h1>Recreational</h1>
+				<ul>
+					<li><a href="#/projects/universityprojects/" >University Projects</a></li>
+					<li><a href="#/projects/starcraft2cheeseposter/" >StarCraft 2 "Cheese" Poster</a></li>
+					<li><a href="#/projects/koreantypography/">Experimental Korean Typography</a></li>
+					<li><a href="#/projects/anonthanks/" >Anonymous Thanks Project</a></li>
+					<li><a href="#/projects/doodles/">Doodles</a></li>
+				</ul>
+			</section>
+		</main> 
+		<main class="project-view" data-title="">
+		</main>
+		<footer>
+			Hyun Kyu Seo © 2015, All Rights Reserved
+		</footer>
+		
+	</body>
+	<script src="./js/main.js"></script>
+	<script src="./js/widoworphanremover.js"></script>
+</html>

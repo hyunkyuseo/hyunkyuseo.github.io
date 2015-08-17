@@ -1,0 +1,23 @@
+# BEGIN (mt) controlled settings
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteCond %{HTTP_HOST} ^(www\.)?hyunkyu\.com$ [NC]
+RewriteRule ^$ https://www.hyunkyu.com%{REQUEST_URI} [R,L]
+RewriteCond %{HTTP_HOST} ^hyunkyu\.com$ [NC]
+RewriteRule ^$ https://www.hyunkyu.com%{REQUEST_URI} [R,L]
+<IfModule !mod_fcgid.c>
+  AddHandler php-stable .php
+</IfModule>
+<IfModule mod_fcgid.c>
+  AddHandler fcgid-script .php
+  <Files *.php>
+    Options +ExecCGI
+  </Files>
+</IfModule>
+# END (mt) controlled settings
+ErrorDocument 404 /forohfor.html
+ErrorDocument 403 /forohthree.html
+ErrorDocument 402 /forohtwo.html
+ErrorDocument 401 /forohone.html
+ErrorDocument 400 /forohoh.html
+
